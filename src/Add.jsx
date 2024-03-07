@@ -57,7 +57,9 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 const Add = () => {
  const navigate = useNavigate();
 
- const [darkMode, setDarkMode] = useState(false); // State to toggle dark mode
+ const [successMessage, setSuccessMessage] = useState(""); // State to manage success message
+
+ const [darkMode, setDarkMode] = useState(true); // State to toggle dark mode
 
  const [data, setData] = useState({
     name: "",
@@ -84,6 +86,17 @@ const Add = () => {
         }
       );
       if (res.ok) {
+        setData({ // Reset the form fields to their initial state
+            name: "",
+            email: "",
+            phone: "",
+            message: "",
+            date: new Date().toString(),
+          });
+          setSuccessMessage("Your message has been sent successfully!"); // Set success message
+        setTimeout(() => {
+          setSuccessMessage(""); // Clear success message after 3 seconds
+        }, 3000);
         navigate("/");
       }
     } catch (error) {
@@ -109,6 +122,11 @@ useEffect(() => {
       <Typography gutterBottom variant="h3" align="center" style={{ color: darkMode ? '#fff' : '#000' }}>
           Contact Form  
         </Typography>
+        {successMessage && (
+            <Typography variant="h6" align="center" style={{ color: 'green' }}>
+                {successMessage}
+            </Typography>
+        )}
         <Container maxWidth="lg">
           <Grid container spacing={2} justifyContent="center">
             <Grid item xs={12} sm={6} md={4} lg={3} xl={6}>
