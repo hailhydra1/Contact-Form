@@ -1,9 +1,15 @@
-# React + Vite
+setup <br>
+cd https://github.com/hailhydra1/Contact-Form <br>
+npm i <br>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+to run <br>
+npm run dev <br>
 
-Currently, two official plugins are available:
+see project on localhost:5173 <br>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-"# Contact-Form" 
+Happy Coding! <br>
+
+for sheets api the project uses sheetdb.io
+
+
+
