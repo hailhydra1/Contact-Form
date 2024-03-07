@@ -1,5 +1,5 @@
 setup <br>
-cd https://github.com/hailhydra1/Contact-Form <br>
+cd ./Contact-Form <br>
 npm i <br>
 
 to run <br>
