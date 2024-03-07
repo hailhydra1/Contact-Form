@@ -1,8 +1,9 @@
-setup <br>
+
+Live Link - https://contact-form-three-sable.vercel.app/ <br>
+
+Setup <br>
 cd ./Contact-Form <br>
 npm i <br>
-
-to run <br>
 npm run dev <br>
 
 see project on localhost:5173 <br>
@@ -18,7 +19,7 @@ see project on localhost:5173 <br>
 
 Happy Coding! <br>
 
-for sheets api the project uses sheetdb.io
+For storing data in google sheets the project uses sheetdb.io
 
 
 
